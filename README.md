@@ -16,3 +16,8 @@ Open Command Prompt in the directory containing `main.go` and run:
 
 ```bat
 go build -trimpath -ldflags="-H windowsgui" -o "KH1 Keyblade Generator.exe" main.go
+```
+
+## Runtime files
+
+The release package includes additional data files used by the application, such as `data/keyblades.json`. These files are distributed alongside the executable and are not part of the compiled Go source.
