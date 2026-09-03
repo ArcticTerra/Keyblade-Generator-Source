@@ -211,7 +211,7 @@ func reportRecoveredPanic(where string, recovered interface{}) {
 	logEvent("PANIC in %s: %v", where, recovered)
 	logEvent("STACK TRACE:\r\n%s", string(debug.Stack()))
 	p := copyCurrentLogToCrashReport(fmt.Sprintf("panic in %s: %v", where, recovered))
-	messageBox(mainWnd, "The generator intercepted a crash instead of disappearing.\r\n\r\nA detailed report was saved here:\r\n"+p+"\r\n\r\nReopen the generator and click 'Open Last Crash Report', then copy/paste the report into ChatGPT.", "KH1 Keyblade Generator - Crash Report", MB_OK|MB_ICONERROR)
+	messageBox(mainWnd, "The generator intercepted a crash instead of disappearing.\r\n\r\nA detailed report was saved here:\r\n"+p+"\r\n\r\nReopen the generator and click 'Open Last Crash Report', Include the report when reporting the issue.", "KH1 Keyblade Generator - Crash Report", MB_OK|MB_ICONERROR)
 }
 
 // Win32 API
@@ -2974,7 +2974,7 @@ func main() {
 	procUpdateWindow.Call(uintptr(mainWnd))
 	logEvent("Main window created: hwnd=0x%X", uintptr(mainWnd))
 	if previousCrashDetected && lastCrashPath != "" {
-		messageBox(mainWnd, "The previous generator session appears to have ended unexpectedly.\r\n\r\nIts preserved crash report is:\r\n"+lastCrashPath+"\r\n\r\nUse 'Open Last Crash Report' to open it in Notepad and copy/paste it into ChatGPT.", "KH1 Keyblade Generator - Previous Crash Detected", MB_OK|MB_ICONERROR)
+		messageBox(mainWnd, "The previous generator session appears to have ended unexpectedly.\r\n\r\nIts preserved crash report is:\r\n"+lastCrashPath+"\r\n\r\nUse 'Open Last Crash Report' to open it in Notepad. Include the report when reporting the issue.", "KH1 Keyblade Generator - Previous Crash Detected", MB_OK|MB_ICONERROR)
 	}
 	if !fileExists(filepath.Join(settings.OpenKhRoot, "btltbl.bin")) || !dirExists(filepath.Join(settings.OpenKhRoot, "remastered")) {
 		showInfo("The generator needs your KH1 extraction paths before it can build mods.\r\n\r\nClick Data Setup... to configure them.")
