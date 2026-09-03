@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "keyblades": [
+    {"id":"kingdom_key","name":"Kingdom Key","stem":"5010","recordIndex":0,"builtin":true,"targetable":true},
+    {"id":"jungle_king","name":"Jungle King","stem":"5020","recordIndex":5,"builtin":true,"targetable":true},
+    {"id":"three_wishes","name":"Three Wishes","stem":"5030","recordIndex":6,"builtin":true,"targetable":true},
+    {"id":"crabclaw","name":"Crabclaw","stem":"5060","recordIndex":9,"builtin":true,"targetable":true},
+    {"id":"pumpkinhead","name":"Pumpkinhead","stem":"5050","recordIndex":8,"builtin":true,"targetable":true},
+    {"id":"fairy_harp","name":"Fairy Harp","stem":"5040","recordIndex":7,"builtin":true,"targetable":true},
+    {"id":"wishing_star","name":"Wishing Star","stem":"5150","recordIndex":18,"builtin":true,"targetable":true},
+    {"id":"spellbinder","name":"Spellbinder","stem":"5080","recordIndex":11,"builtin":true,"targetable":true},
+    {"id":"metal_chocobo","name":"Metal Chocobo","stem":"5110","recordIndex":14,"builtin":true,"targetable":true},
+    {"id":"olympia","name":"Olympia","stem":"5090","recordIndex":12,"builtin":true,"targetable":true},
+    {"id":"lionheart","name":"Lionheart","stem":"5100","recordIndex":13,"builtin":true,"targetable":true},
+    {"id":"lady_luck","name":"Lady Luck","stem":"5140","recordIndex":17,"builtin":true,"targetable":true},
+    {"id":"divine_rose","name":"Divine Rose","stem":"5070","recordIndex":10,"builtin":true,"targetable":true},
+    {"id":"oathkeeper","name":"Oathkeeper","stem":"5120","recordIndex":15,"builtin":true,"targetable":true},
+    {"id":"oblivion","name":"Oblivion","stem":"5130","recordIndex":16,"builtin":true,"targetable":true},
+    {"id":"diamond_dust","name":"Diamond Dust","stem":"5190","recordIndex":20,"builtin":true,"targetable":true},
+    {"id":"one_winged_angel","name":"One-Winged Angel","stem":"5200","recordIndex":21,"builtin":true,"targetable":true},
+    {"id":"ultima_weapon","name":"Ultima Weapon","stem":"5160","recordIndex":19,"builtin":true,"targetable":true}
+  ]
+}
